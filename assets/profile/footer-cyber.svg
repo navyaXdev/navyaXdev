@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 80" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 85" width="100%" height="100%">
   <defs>
     <linearGradient id="footerBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0B111D" />
-      <stop offset="100%" stop-color="#06080E" />
+      <stop offset="0%" stop-color="#11151B" />
+      <stop offset="100%" stop-color="#080A0D" />
     </linearGradient>
 
     <linearGradient id="footerLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1B2838" />
-      <stop offset="25%" stop-color="#00E5FF" />
-      <stop offset="75%" stop-color="#B7FF5A" />
-      <stop offset="100%" stop-color="#1B2838" />
+      <stop offset="0%" stop-color="#29323E" />
+      <stop offset="30%" stop-color="#66D9EF" />
+      <stop offset="70%" stop-color="#BFC8D2" />
+      <stop offset="100%" stop-color="#29323E" />
     </linearGradient>
 
     <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -27,34 +27,36 @@
       50% { opacity: 1; }
     }
     .status-dot {
-      animation: footerPulse 2s ease-in-out infinite;
+      animation: footerPulse 2.5s ease-in-out infinite;
     }
   </style>
 
   <!-- Container -->
-  <rect x="0" y="0" width="960" height="80" rx="8" fill="url(#footerBg)" stroke="#1B2838" stroke-width="1.2" />
+  <rect x="0" y="0" width="960" height="85" rx="8" fill="url(#footerBg)" stroke="#29323E" stroke-width="1.2" />
 
   <!-- Top Accent Glowing Border Line -->
-  <line x1="0" y1="1" x2="960" y2="1" stroke="url(#footerLine)" stroke-width="2" filter="url(#softGlow)" />
+  <line x1="0" y1="1" x2="960" y2="1" stroke="url(#footerLine)" stroke-width="1.8" filter="url(#softGlow)" />
 
-  <!-- Footer Content Layout -->
-  <g transform="translate(24, 45)">
+  <!-- Content Layout -->
+  <g transform="translate(24, 48)">
     <!-- Left: Identity -->
-    <text x="0" y="0" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
-      <tspan fill="#00E5FF" font-weight="700">[CONSOLE_DISPATCH]</tspan> Dinesh Patra <tspan fill="#1B2838">|</tspan> @navyaXdev
+    <text x="0" y="0" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+      <tspan fill="#BFC8D2" font-weight="600">[SYSTEM_DISPATCH]</tspan> Dinesh Patra <tspan fill="#29323E">|</tspan> @navyaXdev
     </text>
 
-    <!-- Center: Status Beacon -->
-    <g transform="translate(420, -4)">
-      <circle cx="0" cy="0" r="3.5" fill="#B7FF5A" class="status-dot" filter="url(#softGlow)" />
-      <text x="12" y="4" fill="#B7FF5A" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="600">
-        DEFENSE_MATRICES: ACTIVE
-      </text>
+    <!-- Center: Official Portfolio Destination Link -->
+    <g transform="translate(390, -4)">
+      <circle cx="0" cy="0" r="3" fill="#66D9EF" class="status-dot" />
+      <a href="https://portfolio.navya.dpdns.org/" target="_blank">
+        <text x="10" y="4" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="600">
+          PORTFOLIO: <tspan fill="#BFC8D2">portfolio.navya.dpdns.org ↗</tspan>
+        </text>
+      </a>
     </g>
 
-    <!-- Right: Verification Hash & Location -->
-    <text x="912" y="0" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" text-anchor="end">
-      INDIA (UTC+05:30) <tspan fill="#1B2838">|</tspan> <tspan fill="#00E5FF">SHA-256 VERIFIED</tspan>
+    <!-- Right: Location & Verification -->
+    <text x="912" y="0" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" text-anchor="end">
+      INDIA (UTC+05:30) <tspan fill="#29323E">|</tspan> <tspan fill="#F2F4F7">SHA-256 VERIFIED</tspan>
     </text>
   </g>
 </svg>

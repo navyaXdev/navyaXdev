@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 180" width="100%" height="100%">
   <defs>
     <linearGradient id="snakeGridBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#080B12" />
-      <stop offset="100%" stop-color="#06090F" />
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="100%" stop-color="#050709" />
     </linearGradient>
 
-    <filter id="cyberGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -22,349 +22,223 @@
       75% { transform: translate(680px, 39px); }
       100% { transform: translate(840px, 0px); }
     }
-    @keyframes dotEat {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.2; transform: scale(0.5); }
-    }
     .cyber-snake {
-      animation: snakeMove 12s linear infinite alternate;
-    }
-    .pulsing-cell {
-      animation: dotEat 2.5s ease-in-out infinite;
+      animation: snakeMove 14s linear infinite alternate;
     }
   </style>
 
   <!-- Container -->
-  <rect x="0" y="0" width="880" height="180" rx="8" fill="url(#snakeGridBg)" stroke="#1B2838" stroke-width="1.2" />
+  <rect x="0" y="0" width="880" height="180" rx="8" fill="url(#snakeGridBg)" stroke="#29323E" stroke-width="1.2" />
 
   <!-- Title Bar -->
-  <rect x="0" y="0" width="880" height="32" rx="8" fill="#0D1320" />
-  <rect x="0" y="24" width="880" height="8" fill="#0D1320" />
-  <line x1="0" y1="32" x2="880" y2="32" stroke="#1B2838" stroke-width="1" />
+  <rect x="0" y="0" width="880" height="32" rx="8" fill="#11151B" />
+  <rect x="0" y="24" width="880" height="8" fill="#11151B" />
+  <line x1="0" y1="32" x2="880" y2="32" stroke="#29323E" stroke-width="1" />
 
-  <text x="20" y="21" fill="#00E5FF" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="700">
-    CONTRIBUTION_TELEMETRY // NAVYAXDEV // CYBER_ACTIVITY_STREAM
+  <text x="20" y="21" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="600">
+    CONTRIBUTION_TELEMETRY // NAVYAXDEV // ACTIVITY_STREAM
   </text>
-  <text x="860" y="21" fill="#B7FF5A" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" text-anchor="end" font-weight="600">
-    STATUS: CONTINUOUS RECONNAISSANCE
+  <text x="860" y="21" fill="#66D9EF" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" text-anchor="end" font-weight="500">
+    SYSTEM: CONTINUOUS INTEGRATION
   </text>
 
-  <!-- Contribution Grid (Stylized Cybersecurity Matrix) -->
+  <!-- Contribution Grid Matrix -->
   <g transform="translate(24, 46)">
-    <!-- Simulated Heatmap Grid Matrix with Realistic Cyber Activity Pattern -->
-    <!-- Rows: 7 (Mon-Sun), Cols: 50 (Weeks) -->
-    <!-- Scripted procedural look using SVG patterns / elements -->
-    
-    <!-- Base cells background & active glowing cells -->
-    <!-- Week Columns 1-50, Spacing: 16px, Cell: 11x11, rx: 2 -->
-    <g fill="#0E1624">
+    <!-- Base Matrix (Luxury Tones: Inactive #11151B, Level 1 #1F2937, Level 2 #374151, Level 3 #66D9EF, Level 4 #BFC8D2, Level 5 #F2F4F7) -->
+    <g fill="#11151B">
       <!-- Row 0 -->
-      <rect x="0" y="0" width="11" height="11" rx="2" fill="#00E5FF" opacity="0.9" filter="url(#cyberGlow)" />
+      <rect x="0" y="0" width="11" height="11" rx="2" fill="#BFC8D2" filter="url(#softGlow)" />
       <rect x="16" y="0" width="11" height="11" rx="2" />
-      <rect x="32" y="0" width="11" height="11" rx="2" fill="#00838F" />
+      <rect x="32" y="0" width="11" height="11" rx="2" fill="#1F2937" />
       <rect x="48" y="0" width="11" height="11" rx="2" />
-      <rect x="64" y="0" width="11" height="11" rx="2" fill="#B7FF5A" opacity="0.8" />
-      <rect x="80" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+      <rect x="64" y="0" width="11" height="11" rx="2" fill="#66D9EF" opacity="0.8" />
+      <rect x="80" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
       <rect x="96" y="0" width="11" height="11" rx="2" />
-      <rect x="112" y="0" width="11" height="11" rx="2" fill="#00838F" />
+      <rect x="112" y="0" width="11" height="11" rx="2" fill="#374151" />
       <rect x="128" y="0" width="11" height="11" rx="2" />
-      <rect x="144" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="160" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+      <rect x="144" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="160" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
       <rect x="176" y="0" width="11" height="11" rx="2" />
-      <rect x="192" y="0" width="11" height="11" rx="2" fill="#00838F" />
+      <rect x="192" y="0" width="11" height="11" rx="2" fill="#1F2937" />
       <rect x="208" y="0" width="11" height="11" rx="2" />
-      <rect x="224" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="240" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+      <rect x="224" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="240" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
       <rect x="256" y="0" width="11" height="11" rx="2" />
-      <rect x="272" y="0" width="11" height="11" rx="2" fill="#00838F" />
+      <rect x="272" y="0" width="11" height="11" rx="2" fill="#374151" />
       <rect x="288" y="0" width="11" height="11" rx="2" />
-      <rect x="304" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="320" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+      <rect x="304" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="320" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
       <rect x="336" y="0" width="11" height="11" rx="2" />
-      <rect x="352" y="0" width="11" height="11" rx="2" fill="#00838F" />
+      <rect x="352" y="0" width="11" height="11" rx="2" fill="#1F2937" />
       <rect x="368" y="0" width="11" height="11" rx="2" />
-      <rect x="384" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="400" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+      <rect x="384" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="400" y="0" width="11" height="11" rx="2" fill="#F2F4F7" />
       <rect x="416" y="0" width="11" height="11" rx="2" />
-      <rect x="432" y="0" width="11" height="11" rx="2" fill="#00838F" />
+      <rect x="432" y="0" width="11" height="11" rx="2" fill="#374151" />
       <rect x="448" y="0" width="11" height="11" rx="2" />
-      <rect x="464" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="480" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+      <rect x="464" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="480" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
       <rect x="496" y="0" width="11" height="11" rx="2" />
-      <rect x="512" y="0" width="11" height="11" rx="2" fill="#00838F" />
+      <rect x="512" y="0" width="11" height="11" rx="2" fill="#1F2937" />
       <rect x="528" y="0" width="11" height="11" rx="2" />
-      <rect x="544" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="560" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+      <rect x="544" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="560" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
       <rect x="576" y="0" width="11" height="11" rx="2" />
-      <rect x="592" y="0" width="11" height="11" rx="2" fill="#00838F" />
-      <rect x="608" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="624" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+      <rect x="592" y="0" width="11" height="11" rx="2" fill="#374151" />
+      <rect x="608" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="624" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
       <rect x="640" y="0" width="11" height="11" rx="2" />
-      <rect x="656" y="0" width="11" height="11" rx="2" fill="#00838F" />
-      <rect x="672" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="688" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-      <rect x="704" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="720" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-      <rect x="736" y="0" width="11" height="11" rx="2" fill="#00838F" />
-      <rect x="752" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="768" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-      <rect x="784" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      <rect x="800" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-      <rect x="816" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
+      <rect x="656" y="0" width="11" height="11" rx="2" fill="#1F2937" />
+      <rect x="672" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="688" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+      <rect x="704" y="0" width="11" height="11" rx="2" fill="#F2F4F7" />
+      <rect x="720" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+      <rect x="736" y="0" width="11" height="11" rx="2" fill="#374151" />
+      <rect x="752" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+      <rect x="768" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+      <rect x="784" y="0" width="11" height="11" rx="2" fill="#F2F4F7" />
+      <rect x="800" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+      <rect x="816" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
 
       <!-- Row 1 (y: 13) -->
       <g transform="translate(0, 13)">
         <rect x="0" y="0" width="11" height="11" rx="2" />
-        <rect x="16" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="16" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="32" y="0" width="11" height="11" rx="2" />
-        <rect x="48" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="48" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="64" y="0" width="11" height="11" rx="2" />
-        <rect x="80" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="96" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="80" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="96" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="112" y="0" width="11" height="11" rx="2" />
-        <rect x="128" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="128" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="144" y="0" width="11" height="11" rx="2" />
-        <rect x="160" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="176" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="160" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="176" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="192" y="0" width="11" height="11" rx="2" />
-        <rect x="208" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="208" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="224" y="0" width="11" height="11" rx="2" />
-        <rect x="240" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="256" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="240" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="256" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="272" y="0" width="11" height="11" rx="2" />
-        <rect x="288" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="288" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="304" y="0" width="11" height="11" rx="2" />
-        <rect x="320" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="336" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="320" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="336" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="352" y="0" width="11" height="11" rx="2" />
-        <rect x="368" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="368" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="384" y="0" width="11" height="11" rx="2" />
-        <rect x="400" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="416" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="400" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="416" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="432" y="0" width="11" height="11" rx="2" />
-        <rect x="448" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="448" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="464" y="0" width="11" height="11" rx="2" />
-        <rect x="480" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="496" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="480" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="496" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="512" y="0" width="11" height="11" rx="2" />
-        <rect x="528" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="544" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
+        <rect x="528" y="0" width="11" height="11" rx="2" fill="#1F2937" />
+        <rect x="544" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
         <rect x="560" y="0" width="11" height="11" rx="2" />
-        <rect x="576" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="592" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="608" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="624" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="640" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="656" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="672" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="688" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="704" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="720" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="736" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="752" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="768" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="784" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="800" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="816" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
+        <rect x="576" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="592" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="608" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="624" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="640" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="656" y="0" width="11" height="11" rx="2" fill="#F2F4F7" />
+        <rect x="672" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="688" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="704" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="720" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="736" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="752" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="768" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="784" y="0" width="11" height="11" rx="2" fill="#F2F4F7" />
+        <rect x="800" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="816" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
       </g>
 
       <!-- Row 2 (y: 26) -->
       <g transform="translate(0, 26)">
-        <rect x="0" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="16" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
+        <rect x="0" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="16" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
         <rect x="32" y="0" width="11" height="11" rx="2" />
-        <rect x="48" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="64" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="48" y="0" width="11" height="11" rx="2" fill="#1F2937" />
+        <rect x="64" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="80" y="0" width="11" height="11" rx="2" />
-        <rect x="96" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
+        <rect x="96" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
         <rect x="112" y="0" width="11" height="11" rx="2" />
-        <rect x="128" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="128" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="144" y="0" width="11" height="11" rx="2" />
-        <rect x="160" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="160" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="176" y="0" width="11" height="11" rx="2" />
-        <rect x="192" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="208" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="192" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="208" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="224" y="0" width="11" height="11" rx="2" />
-        <rect x="240" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="240" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="256" y="0" width="11" height="11" rx="2" />
-        <rect x="272" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="288" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="272" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="288" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="304" y="0" width="11" height="11" rx="2" />
-        <rect x="320" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="320" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="336" y="0" width="11" height="11" rx="2" />
-        <rect x="352" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="368" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="352" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="368" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="384" y="0" width="11" height="11" rx="2" />
-        <rect x="400" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="400" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="416" y="0" width="11" height="11" rx="2" />
-        <rect x="432" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="448" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="432" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="448" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="464" y="0" width="11" height="11" rx="2" />
-        <rect x="480" y="0" width="11" height="11" rx="2" fill="#00838F" />
+        <rect x="480" y="0" width="11" height="11" rx="2" fill="#1F2937" />
         <rect x="496" y="0" width="11" height="11" rx="2" />
-        <rect x="512" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="528" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="512" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="528" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
         <rect x="544" y="0" width="11" height="11" rx="2" />
-        <rect x="560" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="576" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="592" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="608" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="624" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="640" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="656" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="672" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="688" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="704" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="720" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="736" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="752" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="768" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="784" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="800" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="816" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-      </g>
-
-      <!-- Row 3 (y: 39) -->
-      <g transform="translate(0, 39)">
-        <rect x="0" y="0" width="11" height="11" rx="2" />
-        <rect x="16" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="32" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="48" y="0" width="11" height="11" rx="2" />
-        <rect x="64" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="80" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="96" y="0" width="11" height="11" rx="2" />
-        <rect x="112" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="128" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="144" y="0" width="11" height="11" rx="2" />
-        <rect x="160" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="176" y="0" width="11" height="11" rx="2" />
-        <rect x="192" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="208" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="224" y="0" width="11" height="11" rx="2" />
-        <rect x="240" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="256" y="0" width="11" height="11" rx="2" />
-        <rect x="272" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="288" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="304" y="0" width="11" height="11" rx="2" />
-        <rect x="320" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="336" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="352" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="368" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="384" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="400" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="416" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="432" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="448" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="464" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="480" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="496" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="512" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="528" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="544" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="560" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="576" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="592" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="608" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="624" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="640" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="656" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="672" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="688" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="704" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="720" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="736" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="752" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="768" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="784" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="800" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="816" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-      </g>
-
-      <!-- Row 4 (y: 52) -->
-      <g transform="translate(0, 52)">
-        <rect x="0" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="16" y="0" width="11" height="11" rx="2" />
-        <rect x="32" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="48" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="64" y="0" width="11" height="11" rx="2" />
-        <rect x="80" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="96" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="112" y="0" width="11" height="11" rx="2" />
-        <rect x="128" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="144" y="0" width="11" height="11" rx="2" />
-        <rect x="160" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="176" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="192" y="0" width="11" height="11" rx="2" />
-        <rect x="208" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="224" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="240" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="256" y="0" width="11" height="11" rx="2" />
-        <rect x="272" y="0" width="11" height="11" rx="2" fill="#00838F" />
-        <rect x="288" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="304" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="320" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="336" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="352" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="368" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="384" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="400" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="416" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="432" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="448" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="464" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="480" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="496" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="512" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="528" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="544" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="560" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="576" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="592" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="608" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="624" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="640" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="656" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="672" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="688" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="704" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="720" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="736" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="752" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="768" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="784" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
-        <rect x="800" y="0" width="11" height="11" rx="2" fill="#B7FF5A" />
-        <rect x="816" y="0" width="11" height="11" rx="2" fill="#00E5FF" />
+        <rect x="560" y="0" width="11" height="11" rx="2" fill="#1F2937" />
+        <rect x="576" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="592" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="608" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="624" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="640" y="0" width="11" height="11" rx="2" fill="#F2F4F7" />
+        <rect x="656" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="672" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="688" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="704" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="720" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="736" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="752" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="768" y="0" width="11" height="11" rx="2" fill="#F2F4F7" />
+        <rect x="784" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
+        <rect x="800" y="0" width="11" height="11" rx="2" fill="#66D9EF" />
+        <rect x="816" y="0" width="11" height="11" rx="2" fill="#BFC8D2" />
       </g>
     </g>
 
-    <!-- Animated Cyber Snake traversing over the matrix -->
+    <!-- Refined Cyber Snake -->
     <g class="cyber-snake">
-      <!-- Snake Body Segments -->
-      <circle cx="16" cy="20" r="5" fill="#00838F" opacity="0.6" />
-      <circle cx="28" cy="20" r="5" fill="#00ACC1" opacity="0.8" />
-      <circle cx="40" cy="20" r="5.5" fill="#26C6DA" opacity="0.9" />
-      <circle cx="52" cy="20" r="6" fill="#00E5FF" filter="url(#cyberGlow)" />
-      <!-- Snake Eyes -->
-      <circle cx="54" cy="18" r="1.5" fill="#FFFFFF" />
-      <circle cx="54" cy="22" r="1.5" fill="#FFFFFF" />
+      <circle cx="16" cy="18" r="4.5" fill="#374151" opacity="0.6" />
+      <circle cx="28" cy="18" r="4.5" fill="#4B5563" opacity="0.8" />
+      <circle cx="40" cy="18" r="5" fill="#9CA3AF" opacity="0.9" />
+      <circle cx="52" cy="18" r="5.5" fill="#BFC8D2" filter="url(#softGlow)" />
+      <circle cx="54" cy="16.5" r="1.2" fill="#F2F4F7" />
+      <circle cx="54" cy="19.5" r="1.2" fill="#F2F4F7" />
     </g>
   </g>
 
   <!-- Legend & Bottom Details -->
   <g transform="translate(24, 154)">
-    <text x="0" y="0" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">
-      ACTIVITY METRICS: <tspan fill="#00E5FF">10+ REPOSITORIES</tspan> · <tspan fill="#B7FF5A">ACTIVE DEV CYCLE</tspan>
+    <text x="0" y="0" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">
+      TELEMETRY: <tspan fill="#F2F4F7">10+ REPOSITORIES</tspan> · <tspan fill="#BFC8D2">CONTINUOUS VERIFIED BUILDS</tspan>
     </text>
 
     <!-- Scale Legend -->
     <g transform="translate(710, -8)">
-      <text x="-32" y="8" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="8">LESS</text>
-      <rect x="0" y="0" width="9" height="9" rx="1.5" fill="#0E1624" />
-      <rect x="12" y="0" width="9" height="9" rx="1.5" fill="#00838F" />
-      <rect x="24" y="0" width="9" height="9" rx="1.5" fill="#00ACC1" />
-      <rect x="36" y="0" width="9" height="9" rx="1.5" fill="#00E5FF" />
-      <rect x="48" y="0" width="9" height="9" rx="1.5" fill="#B7FF5A" />
-      <text x="64" y="8" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="8">MORE</text>
+      <text x="-32" y="8" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="8">LESS</text>
+      <rect x="0" y="0" width="9" height="9" rx="1.5" fill="#11151B" />
+      <rect x="12" y="0" width="9" height="9" rx="1.5" fill="#1F2937" />
+      <rect x="24" y="0" width="9" height="9" rx="1.5" fill="#374151" />
+      <rect x="36" y="0" width="9" height="9" rx="1.5" fill="#66D9EF" />
+      <rect x="48" y="0" width="9" height="9" rx="1.5" fill="#BFC8D2" />
+      <text x="64" y="8" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="8">MORE</text>
     </g>
   </g>
 </svg>

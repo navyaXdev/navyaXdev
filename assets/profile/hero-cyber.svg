@@ -1,47 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="100%" height="100%">
   <defs>
-    <!-- Background Gradients -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080B12" />
-      <stop offset="50%" stop-color="#0B101D" />
-      <stop offset="100%" stop-color="#07090F" />
+    <!-- Background Gradients: Luxury Dark Surfaces -->
+    <linearGradient id="luxuryBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0D" />
+      <stop offset="60%" stop-color="#0C0F14" />
+      <stop offset="100%" stop-color="#080A0D" />
     </linearGradient>
 
-    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#B7FF5A" stop-opacity="0.8" />
+    <!-- Platinum & Electric Cyan Accent Gradient -->
+    <linearGradient id="platinumAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#66D9EF" />
+      <stop offset="50%" stop-color="#BFC8D2" />
+      <stop offset="100%" stop-color="#F2F4F7" />
     </linearGradient>
 
-    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0" />
-      <stop offset="30%" stop-color="#00E5FF" stop-opacity="0.9" />
-      <stop offset="70%" stop-color="#B7FF5A" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#B7FF5A" stop-opacity="0" />
+    <linearGradient id="buttonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171D25" />
+      <stop offset="100%" stop-color="#11151B" />
     </linearGradient>
 
-    <!-- Radar Sweep Gradient -->
-    <radialGradient id="radarBeam" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.3" />
-      <stop offset="60%" stop-color="#00E5FF" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0" />
+    <!-- Subtle Radar Sweep Gradient -->
+    <radialGradient id="subtleRadar" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#66D9EF" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#BFC8D2" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#BFC8D2" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Subtle Technical Grid Pattern -->
-    <pattern id="cyberGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#141F30" stroke-width="0.75" stroke-opacity="0.7" />
-      <circle cx="24" cy="24" r="0.8" fill="#00E5FF" fill-opacity="0.25" />
+    <!-- Micro Technical Grid Pattern -->
+    <pattern id="luxuryGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#171D25" stroke-width="0.7" stroke-opacity="0.8" />
+      <circle cx="28" cy="28" r="0.6" fill="#BFC8D2" fill-opacity="0.3" />
     </pattern>
 
-    <!-- Filter for Glow Effects -->
-    <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+    <!-- Filters for Subtle Luxury Bloom -->
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="1.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
@@ -51,282 +43,266 @@
   </defs>
 
   <style>
-    @keyframes pulseBeacon {
-      0%, 100% { opacity: 0.3; transform: scale(0.9); }
-      50% { opacity: 1; transform: scale(1.15); }
-    }
-    @keyframes radarRotate {
+    @keyframes radarRotateSlow {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
-    @keyframes blinkCursor {
+    @keyframes pulsePlatinum {
+      0%, 100% { opacity: 0.4; transform: scale(0.95); }
+      50% { opacity: 1; transform: scale(1.05); }
+    }
+    @keyframes dataStreamA {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes dataStreamB {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 200; }
+    }
+    @keyframes blinkCursorRefined {
       0%, 49% { opacity: 1; }
       50%, 100% { opacity: 0; }
     }
-    @keyframes scanline {
+    @keyframes scannerSubtle {
       0% { transform: translateY(-360px); opacity: 0; }
-      20% { opacity: 0.6; }
-      80% { opacity: 0.6; }
+      20% { opacity: 0.4; }
+      80% { opacity: 0.4; }
       100% { transform: translateY(360px); opacity: 0; }
-    }
-    @keyframes packetFlowA {
-      0% { stroke-dashoffset: 240; }
-      100% { stroke-dashoffset: 0; }
-    }
-    @keyframes packetFlowB {
-      0% { stroke-dashoffset: 0; }
-      100% { stroke-dashoffset: 240; }
-    }
-    @keyframes nodePulse {
-      0%, 100% { r: 4; fill-opacity: 0.7; }
-      50% { r: 6; fill-opacity: 1; }
     }
 
     .radar-rotator {
       transform-origin: 750px 180px;
-      animation: radarRotate 8s linear infinite;
+      animation: radarRotateSlow 12s linear infinite;
     }
-    .cursor-blink {
-      animation: blinkCursor 1s step-end infinite;
-    }
-    .scanner-beam {
-      animation: scanline 7s ease-in-out infinite;
-    }
-    .path-data-a {
-      stroke-dasharray: 6 18;
-      animation: packetFlowA 3s linear infinite;
-    }
-    .path-data-b {
-      stroke-dasharray: 6 18;
-      animation: packetFlowB 3.5s linear infinite;
-    }
-    .beacon-light {
+    .status-pulse {
       transform-origin: center;
-      animation: pulseBeacon 2.2s ease-in-out infinite;
+      animation: pulsePlatinum 2.6s ease-in-out infinite;
+    }
+    .stream-a {
+      stroke-dasharray: 4 14;
+      animation: dataStreamA 3s linear infinite;
+    }
+    .stream-b {
+      stroke-dasharray: 4 14;
+      animation: dataStreamB 3.8s linear infinite;
+    }
+    .cursor-refined {
+      animation: blinkCursorRefined 1.1s step-end infinite;
+    }
+    .scan-line {
+      animation: scannerSubtle 8s ease-in-out infinite;
     }
   </style>
 
-  <!-- Base Card Background -->
-  <rect x="0" y="0" width="960" height="360" rx="12" fill="url(#bgGrad)" stroke="#1B2838" stroke-width="1.5" />
-  
-  <!-- Grid Layer -->
-  <rect x="2" y="2" width="956" height="356" rx="10" fill="url(#cyberGrid)" />
+  <!-- Container Frame -->
+  <rect x="0" y="0" width="960" height="360" rx="12" fill="url(#luxuryBg)" stroke="#29323E" stroke-width="1.2" />
 
-  <!-- Scanning Beam Line -->
-  <g clip-path="url(#cardClip)">
-    <line x1="0" y1="0" x2="960" y2="0" stroke="url(#accentLine)" stroke-width="1.5" class="scanner-beam" opacity="0.4" />
-  </g>
+  <!-- Background Technical Grid -->
+  <rect x="2" y="2" width="956" height="356" rx="10" fill="url(#luxuryGrid)" />
 
-  <!-- Top Terminal Header Bar -->
-  <rect x="0" y="0" width="960" height="42" rx="12" fill="#0D1320" />
-  <rect x="0" y="32" width="960" height="10" fill="#0D1320" />
-  <line x1="0" y1="42" x2="960" y2="42" stroke="#1B2838" stroke-width="1" />
+  <!-- Subtle Scanning Laser Line -->
+  <line x1="0" y1="0" x2="960" y2="0" stroke="url(#platinumAccent)" stroke-width="1.2" class="scan-line" opacity="0.3" />
 
-  <!-- Window Controls -->
-  <circle cx="24" cy="21" r="5" fill="#FF5F56" />
-  <circle cx="42" cy="21" r="5" fill="#FFBD2E" />
-  <circle cx="60" cy="21" r="5" fill="#27C93F" />
+  <!-- Top Console Header Bar -->
+  <rect x="0" y="0" width="960" height="40" rx="12" fill="#11151B" />
+  <rect x="0" y="30" width="960" height="10" fill="#11151B" />
+  <line x1="0" y1="40" x2="960" y2="40" stroke="#29323E" stroke-width="1" />
 
-  <!-- Terminal Title & Metrics -->
-  <text x="88" y="25" fill="#8793A5" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="12" font-weight="500">
-    CYBER_OPS_CONSOLE <tspan fill="#1B2838">|</tspan> <tspan fill="#00E5FF">NODE://NAVYAXDEV</tspan> <tspan fill="#1B2838">|</tspan> <tspan fill="#8793A5">KERNEL: HARDENED</tspan>
+  <!-- Metallic Window Accent Dots -->
+  <circle cx="24" cy="20" r="4.5" fill="#3D4754" />
+  <circle cx="40" cy="20" r="4.5" fill="#5C6878" />
+  <circle cx="56" cy="20" r="4.5" fill="#BFC8D2" />
+
+  <!-- Top System Telemetry Label -->
+  <text x="80" y="24" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="500">
+    SYSTEM_CONSOLE <tspan fill="#29323E">|</tspan> <tspan fill="#F2F4F7">NODE://NAVYAXDEV</tspan> <tspan fill="#29323E">|</tspan> <tspan fill="#BFC8D2">LUXURY TECH OPS</tspan>
   </text>
 
-  <!-- Live Status Badge (Top Right) -->
-  <g transform="translate(800, 12)">
-    <rect x="0" y="0" width="144" height="20" rx="10" fill="#09181B" stroke="#00E5FF" stroke-width="0.8" stroke-opacity="0.6" />
-    <circle cx="14" cy="10" r="3.5" fill="#B7FF5A" class="beacon-light" filter="url(#subtleGlow)" />
-    <text x="26" y="14" fill="#B7FF5A" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="10" font-weight="700" letter-spacing="1">DEFCON 5 // SECURE</text>
+  <!-- Top Right Status Badge -->
+  <g transform="translate(775, 11)">
+    <rect x="0" y="0" width="168" height="20" rx="10" fill="#171D25" stroke="#29323E" stroke-width="1" />
+    <circle cx="14" cy="10" r="3.5" fill="#66D9EF" class="status-pulse" filter="url(#softGlow)" />
+    <text x="26" y="14" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="600" letter-spacing="0.8">SYSTEM STATUS // SECURE</text>
   </g>
 
-  <!-- HUD Corner Brackets -->
-  <path d="M 12 56 L 12 48 L 24 48" fill="none" stroke="#00E5FF" stroke-width="1.5" opacity="0.8" />
-  <path d="M 948 56 L 948 48 L 936 48" fill="none" stroke="#00E5FF" stroke-width="1.5" opacity="0.8" />
-  <path d="M 12 344 L 12 352 L 24 352" fill="none" stroke="#00E5FF" stroke-width="1.5" opacity="0.8" />
-  <path d="M 948 344 L 948 352 L 936 352" fill="none" stroke="#00E5FF" stroke-width="1.5" opacity="0.8" />
+  <!-- Subtle Corner Brackets -->
+  <path d="M 14 54 L 14 46 L 22 46" fill="none" stroke="#BFC8D2" stroke-width="1.2" opacity="0.5" />
+  <path d="M 946 54 L 946 46 L 938 46" fill="none" stroke="#BFC8D2" stroke-width="1.2" opacity="0.5" />
+  <path d="M 14 346 L 14 354 L 22 354" fill="none" stroke="#BFC8D2" stroke-width="1.2" opacity="0.5" />
+  <path d="M 946 346 L 946 354 L 938 354" fill="none" stroke="#BFC8D2" stroke-width="1.2" opacity="0.5" />
 
-  <!-- ==================== LEFT COLUMN: IDENTITY & SPEC ==================== -->
-  <g transform="translate(36, 68)">
-    <!-- Security Classification Tag -->
-    <rect x="0" y="0" width="168" height="20" rx="4" fill="#0C1B2A" stroke="#163852" stroke-width="1" />
-    <text x="8" y="14" fill="#00E5FF" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="10" font-weight="700" letter-spacing="1">
-      CALLSIGN // 0x9F_DEV
+  <!-- ==================== LEFT COLUMN: EDITORIAL IDENTITY ==================== -->
+  <g transform="translate(36, 66)">
+    <!-- Category Badge -->
+    <rect x="0" y="0" width="220" height="20" rx="4" fill="#11151B" stroke="#29323E" stroke-width="1" />
+    <text x="10" y="14" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="600" letter-spacing="1">
+      RESEARCH &amp; SYSTEMS ARCHITECTURE
     </text>
 
-    <!-- Main Identity Name -->
-    <text x="0" y="54" fill="#FFFFFF" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+    <!-- Main Name Heading -->
+    <text x="0" y="52" fill="#F2F4F7" font-family="system-ui, -apple-system, 'SF Pro Display', sans-serif" font-size="33" font-weight="700" letter-spacing="0.5">
       DINESH PATRA
     </text>
 
-    <!-- Monospace Handle with Cyber Tag -->
-    <text x="0" y="78" fill="#00E5FF" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="15" font-weight="600" filter="url(#subtleGlow)">
-      @navyaXdev <tspan fill="#8793A5" font-weight="400">· Cybersecurity &amp; Systems Builder</tspan>
+    <!-- Editorial Role & Tagline -->
+    <text x="0" y="76" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" font-weight="500">
+      @navyaXdev <tspan fill="#929DAA">· Developer · Cybersecurity Enthusiast · Builder</tspan>
     </text>
 
-    <!-- Mission / Bio Statement -->
-    <text x="0" y="104" fill="#C5D1DE" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="400">
-      B.Sc. Student architecting practical defense systems, hardware monitors,
+    <!-- Concise Mission Bio -->
+    <text x="0" y="102" fill="#929DAA" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.5" font-weight="400">
+      First-Year B.Sc. student architecting practical defensive systems, wireless
     </text>
-    <text x="0" y="122" fill="#C5D1DE" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="400">
-      applied cryptographic architectures, and unsupervised anomaly detection.
+    <text x="0" y="119" fill="#929DAA" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="12.5" font-weight="400">
+      intrusion monitoring, client-side cryptography, and behavioral ML defenses.
     </text>
 
-    <!-- Pillars / Tactical Focus Cards -->
-    <g transform="translate(0, 140)">
-      <!-- Item 1: Wi-Fi IDS -->
-      <rect x="0" y="0" width="220" height="34" rx="6" fill="#0D1626" stroke="#1B2838" stroke-width="1" />
-      <circle cx="16" cy="17" r="4" fill="#00E5FF" />
-      <text x="30" y="15" fill="#E6EDF3" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="600">IntrusionEye 802.11</text>
-      <text x="30" y="27" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">ESP32 Real-Time Wi-Fi IDS</text>
+    <!-- Strategic Pillars / Projects Chips -->
+    <g transform="translate(0, 136)">
+      <!-- Item 1: IntrusionEye -->
+      <rect x="0" y="0" width="224" height="34" rx="6" fill="#11151B" stroke="#29323E" stroke-width="1" />
+      <circle cx="16" cy="17" r="3.5" fill="#66D9EF" />
+      <text x="28" y="15" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="600">IntrusionEye 802.11</text>
+      <text x="28" y="27" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5">ESP32 Promiscuous IDS</text>
 
-      <!-- Item 2: ML Defense -->
-      <rect x="230" y="0" width="230" height="34" rx="6" fill="#0D1626" stroke="#1B2838" stroke-width="1" />
-      <circle cx="246" cy="17" r="4" fill="#B7FF5A" />
-      <text x="260" y="15" fill="#E6EDF3" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="600">Ghost-Guard Engine</text>
-      <text x="260" y="27" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">Isolation Forest API Honeypot</text>
+      <!-- Item 2: Ghost-Guard -->
+      <rect x="234" y="0" width="234" height="34" rx="6" fill="#11151B" stroke="#29323E" stroke-width="1" />
+      <circle cx="248" cy="17" r="3.5" fill="#BFC8D2" />
+      <text x="260" y="15" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="600">Ghost-Guard Engine</text>
+      <text x="260" y="27" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5">Isolation Forest Honeypot</text>
 
-      <!-- Item 3: Cryptography -->
-      <rect x="0" y="42" width="220" height="34" rx="6" fill="#0D1626" stroke="#1B2838" stroke-width="1" />
-      <circle cx="16" cy="59" r="4" fill="#00E5FF" />
-      <text x="30" y="57" fill="#E6EDF3" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="600">ChatX Cryptography</text>
-      <text x="30" y="69" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">Client-Side AES-256-GCM E2EE</text>
+      <!-- Item 3: ChatX -->
+      <rect x="0" y="42" width="224" height="34" rx="6" fill="#11151B" stroke="#29323E" stroke-width="1" />
+      <circle cx="16" cy="59" r="3.5" fill="#BFC8D2" />
+      <text x="28" y="57" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="600">ChatX E2EE Vault</text>
+      <text x="28" y="69" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5">AES-256-GCM WebCrypto</text>
 
-      <!-- Item 4: Zero Trust -->
-      <rect x="230" y="42" width="230" height="34" rx="6" fill="#0D1626" stroke="#1B2838" stroke-width="1" />
-      <circle cx="246" cy="59" r="4" fill="#B7FF5A" />
-      <text x="260" y="57" fill="#E6EDF3" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="600">Mornye Storage Vault</text>
-      <text x="260" y="69" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">WebDAV • Argon2id • Cloudflare</text>
+      <!-- Item 4: Mornye -->
+      <rect x="234" y="42" width="234" height="34" rx="6" fill="#11151B" stroke="#29323E" stroke-width="1" />
+      <circle cx="248" cy="59" r="3.5" fill="#66D9EF" />
+      <text x="260" y="57" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5" font-weight="600">Mornye Zero-Trust</text>
+      <text x="260" y="69" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5">RFC 4918 WebDAV Server</text>
     </g>
 
-    <!-- Bottom Active Terminal Prompt -->
+    <!-- Bottom Action Row: Portfolio CTA & Terminal Prompt -->
     <g transform="translate(0, 230)">
-      <rect x="0" y="0" width="460" height="26" rx="4" fill="#06090F" stroke="#162235" stroke-width="1" />
-      <text x="12" y="17" fill="#00E5FF" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700">
-        operator@navyaXdev:~$ <tspan fill="#E6EDF3" font-weight="400">soc_monitor --telemetry=live</tspan>
-        <tspan fill="#B7FF5A" class="cursor-blink">█</tspan>
+      <!-- CTA Button Frame -->
+      <a href="https://portfolio.navya.dpdns.org/" target="_blank">
+        <rect x="0" y="0" width="195" height="28" rx="5" fill="url(#buttonGradient)" stroke="#BFC8D2" stroke-width="1.2" />
+        <text x="14" y="18" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" letter-spacing="0.5">
+          EXPLORE PORTFOLIO ↗
+        </text>
+      </a>
+
+      <!-- Terminal Status Inline -->
+      <rect x="205" y="0" width="263" height="28" rx="5" fill="#0C0F14" stroke="#29323E" stroke-width="1" />
+      <text x="217" y="18" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5">
+        <tspan fill="#66D9EF">operator@sys:</tspan> status <tspan fill="#F2F4F7">--nominal</tspan>
+        <tspan fill="#BFC8D2" class="cursor-refined">█</tspan>
       </text>
     </g>
   </g>
 
-  <!-- ==================== VERTICAL DIVIDER ==================== -->
-  <line x1="520" y1="58" x2="520" y2="338" stroke="#1B2838" stroke-width="1" stroke-dasharray="4 6" />
+  <!-- Vertical Subtle Divider -->
+  <line x1="525" y1="56" x2="525" y2="340" stroke="#29323E" stroke-width="1" stroke-dasharray="3 4" />
 
-  <!-- ==================== RIGHT COLUMN: ANIMATED NETWORK TOPOLOGY ==================== -->
-  <g transform="translate(535, 54)">
-    <!-- Section Sub-header -->
-    <text x="10" y="14" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" letter-spacing="1">
-      TOPOLOGY // ACTIVE_MESH_SURVEILLANCE
+  <!-- ==================== RIGHT COLUMN: REFINED TOPOLOGY ==================== -->
+  <g transform="translate(540, 56)">
+    <!-- Sub-header -->
+    <text x="10" y="14" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="600" letter-spacing="1">
+      TOPOLOGY // DISTRIBUTED DEFENSE MESH
     </text>
-    <text x="320" y="14" fill="#00E5FF" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="600" text-anchor="end">
-      LATENCY: 12ms · LOSS: 0%
+    <text x="320" y="14" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="500" text-anchor="end">
+      UPTIME: 99.9%
     </text>
 
-    <!-- Radar Range Rings & Crosshairs -->
+    <!-- Concentric Range Rings (Center: 195, 135) -->
     <g transform="translate(195, 135)">
-      <!-- Outer Ring -->
-      <circle cx="0" cy="0" r="115" fill="none" stroke="#16253B" stroke-width="1" stroke-dasharray="3 5" />
-      <!-- Middle Ring -->
-      <circle cx="0" cy="0" r="75" fill="none" stroke="#16253B" stroke-width="1" />
-      <!-- Inner Ring -->
-      <circle cx="0" cy="0" r="35" fill="none" stroke="#1B324D" stroke-width="1" />
-      
-      <!-- Crosshair Axes -->
-      <line x1="-120" y1="0" x2="120" y2="0" stroke="#152233" stroke-width="0.8" />
-      <line x1="0" y1="-120" x2="0" y2="120" stroke="#152233" stroke-width="0.8" />
+      <circle cx="0" cy="0" r="115" fill="none" stroke="#171D25" stroke-width="1" stroke-dasharray="3 4" />
+      <circle cx="0" cy="0" r="75" fill="none" stroke="#1D242E" stroke-width="1" />
+      <circle cx="0" cy="0" r="35" fill="none" stroke="#29323E" stroke-width="1" />
 
-      <!-- Expanding Radar Wave Animation -->
-      <circle cx="0" cy="0" r="10" fill="none" stroke="#00E5FF" stroke-width="1.2" opacity="0.7">
-        <animate attributeName="r" values="10;110;115" dur="3.5s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.8;0.3;0" dur="3.5s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="0" cy="0" r="10" fill="none" stroke="#B7FF5A" stroke-width="1" opacity="0.6">
-        <animate attributeName="r" values="10;90;110" dur="3.5s" begin="1.75s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.7;0.2;0" dur="3.5s" begin="1.75s" repeatCount="indefinite" />
+      <!-- Crosshairs -->
+      <line x1="-120" y1="0" x2="120" y2="0" stroke="#171D25" stroke-width="0.8" />
+      <line x1="0" y1="-120" x2="0" y2="120" stroke="#171D25" stroke-width="0.8" />
+
+      <!-- Subtle Expanding Radar Ping -->
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#BFC8D2" stroke-width="1" opacity="0.6">
+        <animate attributeName="r" values="10;115" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.7;0" dur="4s" repeatCount="indefinite" />
       </circle>
 
-      <!-- Rotating Sweep Cone -->
+      <!-- Slow Rotating Sweep Cone -->
       <g class="radar-rotator" style="transform-origin: 0px 0px;">
-        <path d="M 0 0 L 115 0 A 115 115 0 0 0 81 -81 Z" fill="url(#radarBeam)" />
-        <line x1="0" y1="0" x2="115" y2="0" stroke="#00E5FF" stroke-width="1.5" opacity="0.8" filter="url(#subtleGlow)" />
+        <path d="M 0 0 L 115 0 A 115 115 0 0 0 81 -81 Z" fill="url(#subtleRadar)" />
+        <line x1="0" y1="0" x2="115" y2="0" stroke="#BFC8D2" stroke-width="1.2" opacity="0.7" />
       </g>
     </g>
 
-    <!-- Topological Mesh Nodes & Interconnections (Local Coords: Center is 195, 135) -->
-    <!-- Nodes Coordinates:
-         Center: (195, 135) - CORE SOC
-         Node 1: (85, 65)   - IDS PROBE (IntrusionEye)
-         Node 2: (305, 65)  - ML DEFENSE (Ghost-Guard)
-         Node 3: (75, 205)  - VAULT (ChatX AES-256)
-         Node 4: (315, 205) - CLOUD TUNNEL (Mornye WebDAV)
-         Node 5: (195, 245) - HONEYPOT TRAP
-    -->
+    <!-- Connection Mesh Lines -->
+    <line x1="195" y1="135" x2="85" y2="65" stroke="#222B37" stroke-width="1.2" />
+    <line x1="195" y1="135" x2="305" y2="65" stroke="#222B37" stroke-width="1.2" />
+    <line x1="195" y1="135" x2="75" y2="205" stroke="#222B37" stroke-width="1.2" />
+    <line x1="195" y1="135" x2="315" y2="205" stroke="#222B37" stroke-width="1.2" />
+    <line x1="195" y1="135" x2="195" y2="245" stroke="#222B37" stroke-width="1.2" />
 
-    <!-- Static Connection Lines -->
-    <line x1="195" y1="135" x2="85" y2="65" stroke="#1E334D" stroke-width="1.5" />
-    <line x1="195" y1="135" x2="305" y2="65" stroke="#1E334D" stroke-width="1.5" />
-    <line x1="195" y1="135" x2="75" y2="205" stroke="#1E334D" stroke-width="1.5" />
-    <line x1="195" y1="135" x2="315" y2="205" stroke="#1E334D" stroke-width="1.5" />
-    <line x1="195" y1="135" x2="195" y2="245" stroke="#1E334D" stroke-width="1.5" />
-    <line x1="85" y1="65" x2="305" y2="65" stroke="#16283D" stroke-width="1" stroke-dasharray="2 4" />
-    <line x1="75" y1="205" x2="315" y2="205" stroke="#16283D" stroke-width="1" stroke-dasharray="2 4" />
+    <!-- Animated Data Streams Along Conduits -->
+    <line x1="195" y1="135" x2="85" y2="65" stroke="#66D9EF" stroke-width="1.8" class="stream-a" opacity="0.85" />
+    <line x1="195" y1="135" x2="305" y2="65" stroke="#BFC8D2" stroke-width="1.8" class="stream-b" opacity="0.85" />
+    <line x1="195" y1="135" x2="75" y2="205" stroke="#66D9EF" stroke-width="1.6" class="stream-b" opacity="0.75" />
+    <line x1="195" y1="135" x2="315" y2="205" stroke="#BFC8D2" stroke-width="1.6" class="stream-a" opacity="0.75" />
+    <line x1="195" y1="135" x2="195" y2="245" stroke="#BFC8D2" stroke-width="1.5" class="stream-a" opacity="0.75" />
 
-    <!-- Animated Data Packet Streams Along Traces -->
-    <line x1="195" y1="135" x2="85" y2="65" stroke="#00E5FF" stroke-width="2" class="path-data-a" opacity="0.9" filter="url(#subtleGlow)" />
-    <line x1="195" y1="135" x2="305" y2="65" stroke="#B7FF5A" stroke-width="2" class="path-data-b" opacity="0.9" filter="url(#subtleGlow)" />
-    <line x1="195" y1="135" x2="75" y2="205" stroke="#00E5FF" stroke-width="2" class="path-data-b" opacity="0.8" />
-    <line x1="195" y1="135" x2="315" y2="205" stroke="#B7FF5A" stroke-width="2" class="path-data-a" opacity="0.8" />
-    <line x1="195" y1="135" x2="195" y2="245" stroke="#FF5555" stroke-width="1.5" class="path-data-a" opacity="0.8" />
-
-    <!-- Node 1: IDS Probe -->
+    <!-- Node 1: IntrusionEye -->
     <g transform="translate(85, 65)">
-      <circle cx="0" cy="0" r="14" fill="#0A1624" stroke="#00E5FF" stroke-width="1.5" />
-      <circle cx="0" cy="0" r="4" fill="#00E5FF" />
-      <text x="0" y="-18" fill="#E6EDF3" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="600" text-anchor="middle">IDS_PROBE</text>
-      <text x="0" y="24" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="8" text-anchor="middle">ESP32 RF</text>
+      <circle cx="0" cy="0" r="13" fill="#11151B" stroke="#66D9EF" stroke-width="1.2" />
+      <circle cx="0" cy="0" r="3.5" fill="#66D9EF" />
+      <text x="0" y="-17" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5" font-weight="600" text-anchor="middle">IDS_PROBE</text>
+      <text x="0" y="23" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="7.5" text-anchor="middle">ESP32</text>
     </g>
 
-    <!-- Node 2: ML Defense -->
+    <!-- Node 2: Ghost-Guard -->
     <g transform="translate(305, 65)">
-      <circle cx="0" cy="0" r="14" fill="#0A1624" stroke="#B7FF5A" stroke-width="1.5" />
-      <circle cx="0" cy="0" r="4" fill="#B7FF5A" />
-      <text x="0" y="-18" fill="#E6EDF3" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="600" text-anchor="middle">ML_ENGINE</text>
-      <text x="0" y="24" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="8" text-anchor="middle">IsoForest</text>
+      <circle cx="0" cy="0" r="13" fill="#11151B" stroke="#BFC8D2" stroke-width="1.2" />
+      <circle cx="0" cy="0" r="3.5" fill="#BFC8D2" />
+      <text x="0" y="-17" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5" font-weight="600" text-anchor="middle">ML_ENGINE</text>
+      <text x="0" y="23" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="7.5" text-anchor="middle">IsoForest</text>
     </g>
 
-    <!-- Node 3: Crypt Vault -->
+    <!-- Node 3: ChatX Crypt Vault -->
     <g transform="translate(75, 205)">
-      <circle cx="0" cy="0" r="13" fill="#0A1624" stroke="#00E5FF" stroke-width="1.5" />
-      <circle cx="0" cy="0" r="4" fill="#00E5FF" />
-      <text x="0" y="24" fill="#E6EDF3" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="600" text-anchor="middle">AES_VAULT</text>
+      <circle cx="0" cy="0" r="12" fill="#11151B" stroke="#66D9EF" stroke-width="1.2" />
+      <circle cx="0" cy="0" r="3.5" fill="#66D9EF" />
+      <text x="0" y="23" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5" font-weight="600" text-anchor="middle">AES_VAULT</text>
     </g>
 
-    <!-- Node 4: Cloud Tunnel -->
+    <!-- Node 4: Mornye Zero Trust -->
     <g transform="translate(315, 205)">
-      <circle cx="0" cy="0" r="13" fill="#0A1624" stroke="#B7FF5A" stroke-width="1.5" />
-      <circle cx="0" cy="0" r="4" fill="#B7FF5A" />
-      <text x="0" y="24" fill="#E6EDF3" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="600" text-anchor="middle">ZERO_TRUST</text>
+      <circle cx="0" cy="0" r="12" fill="#11151B" stroke="#BFC8D2" stroke-width="1.2" />
+      <circle cx="0" cy="0" r="3.5" fill="#BFC8D2" />
+      <text x="0" y="23" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5" font-weight="600" text-anchor="middle">ZERO_TRUST</text>
     </g>
 
-    <!-- Node 5: Honeypot Trap -->
+    <!-- Node 5: Safora Shield -->
     <g transform="translate(195, 245)">
-      <circle cx="0" cy="0" r="11" fill="#1A0D15" stroke="#FF5555" stroke-width="1.2" />
-      <circle cx="0" cy="0" r="3" fill="#FF5555" />
-      <text x="0" y="22" fill="#FF8888" font-family="'JetBrains Mono', Consolas, monospace" font-size="8" font-weight="600" text-anchor="middle">HONEYPOT</text>
+      <circle cx="0" cy="0" r="11" fill="#11151B" stroke="#BFC8D2" stroke-width="1" />
+      <circle cx="0" cy="0" r="3" fill="#BFC8D2" />
+      <text x="0" y="21" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="8" font-weight="600" text-anchor="middle">PHISH_DEFENSE</text>
     </g>
 
-    <!-- Central Hub Node: SOC CORE -->
+    <!-- Center Node: SOC CORE -->
     <g transform="translate(195, 135)">
-      <circle cx="0" cy="0" r="22" fill="#07121E" stroke="#00E5FF" stroke-width="2" filter="url(#subtleGlow)" />
-      <circle cx="0" cy="0" r="16" fill="#0B1C2F" stroke="#B7FF5A" stroke-width="1" stroke-dasharray="3 3" />
-      <circle cx="0" cy="0" r="6" fill="#00E5FF" />
-      <text x="0" y="36" fill="#00E5FF" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">SOC_CORE</text>
+      <circle cx="0" cy="0" r="21" fill="#11151B" stroke="#BFC8D2" stroke-width="1.8" filter="url(#softGlow)" />
+      <circle cx="0" cy="0" r="15" fill="#171D25" stroke="#66D9EF" stroke-width="1" stroke-dasharray="2 3" />
+      <circle cx="0" cy="0" r="5" fill="#F2F4F7" />
+      <text x="0" y="35" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1">SOC_CORE</text>
     </g>
 
-    <!-- Telemetry Readout Strip at Bottom -->
+    <!-- Bottom Readout Strip -->
     <g transform="translate(10, 276)">
-      <rect x="0" y="0" width="375" height="18" rx="3" fill="#09101A" stroke="#162235" stroke-width="1" />
-      <text x="8" y="13" fill="#8793A5" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">
-        MESH: <tspan fill="#B7FF5A">ACTIVE</tspan> · PACKETS: <tspan fill="#00E5FF">14,291/s</tspan> · THREATS_ISOLATED: <tspan fill="#B7FF5A">100%</tspan>
+      <rect x="0" y="0" width="375" height="18" rx="3" fill="#0C0F14" stroke="#29323E" stroke-width="1" />
+      <text x="8" y="13" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5">
+        TELEMETRY: <tspan fill="#F2F4F7">ACTIVE</tspan> · LOSS: <tspan fill="#66D9EF">0.00%</tspan> · CRYPTO: <tspan fill="#BFC8D2">AES-256-GCM</tspan>
       </text>
     </g>
   </g>
