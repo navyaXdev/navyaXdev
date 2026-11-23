@@ -29,10 +29,10 @@
 
   <!-- Sub-header -->
   <text x="24" y="22" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="600" letter-spacing="1">
-    ARCHITECTURE // 3-TIER DEFENSE PIPELINE
+    LEARNING BY BUILDING // EXPERIMENTAL PROJECTS
   </text>
   <text x="936" y="22" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" text-anchor="end" font-weight="500">
-    STATUS: REALTIME SURVEILLANCE
+    STUDENT PORTFOLIO
   </text>
 
   <!-- Laser Conduit Behind Cards -->
@@ -47,30 +47,30 @@
     <animate attributeName="cx" values="160;800" dur="4.5s" begin="2.25s" repeatCount="indefinite" />
   </circle>
 
-  <!-- Tier 1: IntrusionEye -->
+  <!-- Card 1: Mornye Network Storage -->
   <g transform="translate(24, 36)">
     <rect x="0" y="0" width="280" height="66" rx="6" fill="#11151B" stroke="#29323E" stroke-width="1.2" />
     <rect x="0" y="0" width="280" height="3" rx="1.5" fill="#66D9EF" />
-    <text x="16" y="20" fill="#66D9EF" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">01 // RF &amp; WIRELESS IDS</text>
-    <text x="16" y="38" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">IntrusionEye</text>
-    <text x="16" y="52" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="9">ESP32 802.11 Promiscuous Sniffer</text>
+    <text x="16" y="20" fill="#66D9EF" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">01 // LINUX &amp; SERVER SETUP</text>
+    <text x="16" y="38" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Mornye Storage</text>
+    <text x="16" y="52" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="9">Linux Server &amp; Cloudflare Tunnel</text>
   </g>
 
-  <!-- Tier 2: ChatX -->
+  <!-- Card 2: IntrusionEye -->
   <g transform="translate(340, 36)">
     <rect x="0" y="0" width="280" height="66" rx="6" fill="#11151B" stroke="#29323E" stroke-width="1.2" />
     <rect x="0" y="0" width="280" height="3" rx="1.5" fill="#BFC8D2" />
-    <text x="16" y="20" fill="#BFC8D2" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">02 // CLIENT-SIDE CRYPTO</text>
-    <text x="16" y="38" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">ChatX E2EE</text>
-    <text x="16" y="52" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="9">AES-256-GCM / WebCrypto Vault</text>
+    <text x="16" y="20" fill="#BFC8D2" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">02 // HARDWARE EXPERIMENT</text>
+    <text x="16" y="38" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">IntrusionEye</text>
+    <text x="16" y="52" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="9">ESP32 802.11 Wi-Fi Monitor</text>
   </g>
 
-  <!-- Tier 3: Ghost-Guard -->
+  <!-- Card 3: Ghost-Guard -->
   <g transform="translate(656, 36)">
     <rect x="0" y="0" width="280" height="66" rx="6" fill="#11151B" stroke="#29323E" stroke-width="1.2" />
     <rect x="0" y="0" width="280" height="3" rx="1.5" fill="#66D9EF" />
-    <text x="16" y="20" fill="#66D9EF" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">03 // BEHAVIORAL ML DEFENSE</text>
+    <text x="16" y="20" fill="#66D9EF" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">03 // MACHINE LEARNING</text>
     <text x="16" y="38" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Ghost-Guard</text>
-    <text x="16" y="52" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="9">Isolation Forest API Honeypot</text>
+    <text x="16" y="52" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="9">Isolation Forest Anomaly Detection</text>
   </g>
 </svg>

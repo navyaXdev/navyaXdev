@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 70" width="100%" height="100%">
   <defs>
-    <linearGradient id="footerBgClean" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="footerBgStudent" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#11151B" />
       <stop offset="100%" stop-color="#080A0D" />
     </linearGradient>
 
-    <linearGradient id="footerLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="footerLineStudent" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#29323E" />
       <stop offset="30%" stop-color="#66D9EF" />
       <stop offset="70%" stop-color="#BFC8D2" />
@@ -13,28 +13,28 @@
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="960" height="70" rx="8" fill="url(#footerBgClean)" stroke="#29323E" stroke-width="1.2" />
-  <line x1="0" y1="1" x2="960" y2="1" stroke="url(#footerLineGrad)" stroke-width="1.5" />
+  <rect x="0" y="0" width="960" height="70" rx="8" fill="url(#footerBgStudent)" stroke="#29323E" stroke-width="1.2" />
+  <line x1="0" y1="1" x2="960" y2="1" stroke="url(#footerLineStudent)" stroke-width="1.5" />
 
   <g transform="translate(24, 40)">
     <!-- Left -->
     <text x="0" y="0" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
-      <tspan fill="#BFC8D2" font-weight="600">[DISPATCH]</tspan> Dinesh Patra <tspan fill="#29323E">|</tspan> @navyaXdev
+      <tspan fill="#BFC8D2" font-weight="600">[STUDENT_PORTFOLIO]</tspan> Dinesh Patra <tspan fill="#29323E">|</tspan> @navyaXdev
     </text>
 
     <!-- Center -->
-    <g transform="translate(390, -3)">
+    <g transform="translate(370, -3)">
       <circle cx="0" cy="0" r="3" fill="#66D9EF" />
       <a href="https://portfolio.navya.dpdns.org/" target="_blank">
         <text x="10" y="4" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="600">
-          PORTFOLIO: <tspan fill="#BFC8D2">portfolio.navya.dpdns.org ↗</tspan>
+          OFFICIAL PORTFOLIO: <tspan fill="#BFC8D2">portfolio.navya.dpdns.org ↗</tspan>
         </text>
       </a>
     </g>
 
     <!-- Right -->
     <text x="912" y="0" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" text-anchor="end">
-      INDIA (UTC+05:30) <tspan fill="#29323E">|</tspan> <tspan fill="#F2F4F7">SHA-256 VERIFIED</tspan>
+      INDIA (UTC+05:30) <tspan fill="#29323E">|</tspan> <tspan fill="#F2F4F7">LEARNING &amp; EXPERIMENTING</tspan>
     </text>
   </g>
 </svg>

@@ -153,19 +153,19 @@
   <circle cx="38" cy="19" r="4.5" fill="#4A5568" />
   <circle cx="54" cy="19" r="4.5" fill="#BFC8D2" />
 
-  <!-- System Header Text -->
+  <!-- Header Text -->
   <text x="78" y="23" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="500">
-    DINESH PATRA <tspan fill="#29323E">|</tspan> <tspan fill="#F2F4F7">@navyaXdev</tspan> <tspan fill="#29323E">|</tspan> <tspan fill="#BFC8D2">SYSTEMS &amp; SECURITY ENGINEERING</tspan>
+    DINESH PATRA <tspan fill="#29323E">|</tspan> <tspan fill="#F2F4F7">@navyaXdev</tspan> <tspan fill="#29323E">|</tspan> <tspan fill="#BFC8D2">COMPUTER SCIENCE STUDENT · TECH EXPLORER</tspan>
   </text>
 
-  <!-- Live Status Pill (Top Right) -->
+  <!-- Status Badge (Top Right) -->
   <g transform="translate(790, 10)">
     <rect x="0" y="0" width="150" height="20" rx="10" fill="#161C24" stroke="#29323E" stroke-width="1" />
     <circle cx="14" cy="10" r="3" fill="#66D9EF" class="pulse-dot" filter="url(#luxuryGlow)" />
-    <text x="25" y="14" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="600" letter-spacing="0.8">SYSTEM // ACTIVE</text>
+    <text x="25" y="14" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="600" letter-spacing="0.8">STATUS // LEARNING</text>
   </g>
 
-  <!-- Subtle Corner Crosshairs -->
+  <!-- Corner Reticles -->
   <path d="M 14 52 L 14 45 L 21 45" fill="none" stroke="#BFC8D2" stroke-width="1.2" opacity="0.4" />
   <path d="M 946 52 L 946 45 L 939 45" fill="none" stroke="#BFC8D2" stroke-width="1.2" opacity="0.4" />
   <path d="M 14 366 L 14 373 L 21 373" fill="none" stroke="#BFC8D2" stroke-width="1.2" opacity="0.4" />
@@ -173,51 +173,51 @@
 
   <!-- ==================== LEFT COLUMN: EDITORIAL IDENTITY ==================== -->
   <g transform="translate(40, 68)">
-    <!-- Specialized Domain Tag -->
-    <rect x="0" y="0" width="225" height="20" rx="4" fill="#11151B" stroke="#29323E" stroke-width="1" />
+    <!-- Identity Badge -->
+    <rect x="0" y="0" width="205" height="20" rx="4" fill="#11151B" stroke="#29323E" stroke-width="1" />
     <text x="10" y="14" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="600" letter-spacing="1">
-      CYBERSECURITY &amp; SOFTWARE ARCHITECTURE
+      B.SC. COMPUTER SCIENCE STUDENT
     </text>
 
-    <!-- Main Name Title -->
+    <!-- Name Title -->
     <text x="0" y="56" fill="#F2F4F7" font-family="system-ui, -apple-system, 'SF Pro Display', sans-serif" font-size="36" font-weight="700" letter-spacing="1">
       DINESH PATRA
     </text>
 
     <!-- Role Sub-line -->
-    <text x="0" y="82" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="13.5" font-weight="500">
-      Developer · Cybersecurity Enthusiast · Builder
+    <text x="0" y="82" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5" font-weight="500">
+      Exploring Ethical Hacking, Machine Learning &amp; Technology
     </text>
 
-    <!-- Editorial Summary -->
+    <!-- Authentic Summary Statement -->
     <text x="0" y="112" fill="#929DAA" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="400">
-      First-Year B.Sc. student researching wireless intrusion detection,
+      Student exploring how systems work from fundamentals, experimenting
     </text>
     <text x="0" y="130" fill="#929DAA" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" font-weight="400">
-      client-side cryptography, and behavioral machine learning defenses.
+      with new ideas, and building practical projects with AI assistance.
     </text>
 
-    <!-- Core Engineering Focus Chips -->
+    <!-- Learning & Exploration Areas Chips -->
     <g transform="translate(0, 150)">
       <rect x="0" y="0" width="205" height="32" rx="5" fill="#11151B" stroke="#29323E" stroke-width="1" />
       <circle cx="14" cy="16" r="3.5" fill="#66D9EF" />
-      <text x="26" y="15" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">802.11 Wi-Fi IDS</text>
-      <text x="26" y="26" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="8">ESP32 Promiscuous</text>
+      <text x="26" y="15" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Linux Fundamentals</text>
+      <text x="26" y="26" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="8">Commands &amp; Server Setup</text>
 
       <rect x="215" y="0" width="225" height="32" rx="5" fill="#11151B" stroke="#29323E" stroke-width="1" />
       <circle cx="229" cy="16" r="3.5" fill="#BFC8D2" />
-      <text x="241" y="15" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Applied Cryptography</text>
-      <text x="241" y="26" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="8">AES-256-GCM / Argon2id</text>
+      <text x="241" y="15" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Python Scripting</text>
+      <text x="241" y="26" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="8">Automation &amp; Logic</text>
 
       <rect x="0" y="40" width="205" height="32" rx="5" fill="#11151B" stroke="#29323E" stroke-width="1" />
       <circle cx="14" cy="56" r="3.5" fill="#BFC8D2" />
-      <text x="26" y="55" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Behavioral ML Defense</text>
-      <text x="26" y="66" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="8">Isolation Forest API Trap</text>
+      <text x="26" y="55" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Networking Basics</text>
+      <text x="26" y="66" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="8">TCP/IP &amp; Protocols</text>
 
       <rect x="215" y="40" width="225" height="32" rx="5" fill="#11151B" stroke="#29323E" stroke-width="1" />
       <circle cx="229" cy="56" r="3.5" fill="#66D9EF" />
-      <text x="241" y="55" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Linux &amp; Zero-Trust</text>
-      <text x="241" y="66" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="8">Cloudflare Tunnels / Docker</text>
+      <text x="241" y="55" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">Ethical Hacking &amp; ML</text>
+      <text x="241" y="66" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="8">Concepts &amp; Experiments</text>
     </g>
 
     <!-- Primary Portfolio CTA Button -->
@@ -229,10 +229,10 @@
         </text>
       </a>
 
-      <!-- Compact Terminal Status Readout -->
+      <!-- Compact Status Readout -->
       <rect x="220" y="0" width="220" height="32" rx="6" fill="#0A0D12" stroke="#29323E" stroke-width="1" />
       <text x="232" y="20" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="10">
-        <tspan fill="#66D9EF">telemetry:</tspan> nominal <tspan fill="#BFC8D2" class="cursor-element">█</tspan>
+        <tspan fill="#66D9EF">student@lab:</tspan> learning <tspan fill="#BFC8D2" class="cursor-element">█</tspan>
       </text>
     </g>
   </g>
@@ -240,14 +240,13 @@
   <!-- Vertical Divider -->
   <line x1="505" y1="56" x2="505" y2="360" stroke="#29323E" stroke-width="1" stroke-dasharray="3 4" />
 
-  <!-- ==================== RIGHT COLUMN: ANIMATED NETWORK VISUALIZATION ==================== -->
+  <!-- ==================== RIGHT COLUMN: ANIMATED LEARNING MAP ==================== -->
   <g transform="translate(525, 54)">
-    <!-- Sub-header -->
     <text x="10" y="14" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="600" letter-spacing="1">
-      TOPOLOGY // DISTRIBUTED DEFENSE NODES
+      EXPLORATION // ACTIVE LEARNING NODES
     </text>
     <text x="390" y="14" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="500" text-anchor="end">
-      UPTIME: 99.98%
+      HANDS-ON PROJECTS
     </text>
 
     <!-- Radar Range Rings (Center: 205, 145) -->
@@ -273,14 +272,7 @@
       </g>
     </g>
 
-    <!-- Network Topology Connections -->
-    <!-- Center Node: (205, 145) -->
-    <!-- Node 1: (85, 75)   - IDS Sensor -->
-    <!-- Node 2: (325, 75)  - ML Model -->
-    <!-- Node 3: (75, 220)  - Crypt Vault -->
-    <!-- Node 4: (335, 220) - Zero-Trust Storage -->
-
-    <!-- Static Connection Traces -->
+    <!-- Network Connections -->
     <line x1="205" y1="145" x2="85" y2="75" stroke="#222B37" stroke-width="1.2" />
     <line x1="205" y1="145" x2="325" y2="75" stroke="#222B37" stroke-width="1.2" />
     <line x1="205" y1="145" x2="75" y2="220" stroke="#222B37" stroke-width="1.2" />
@@ -294,51 +286,51 @@
     <line x1="205" y1="145" x2="75" y2="220" stroke="#66D9EF" stroke-width="1.6" class="packet-stream-2" opacity="0.75" />
     <line x1="205" y1="145" x2="335" y2="220" stroke="#BFC8D2" stroke-width="1.6" class="packet-stream-1" opacity="0.75" />
 
-    <!-- Node 1: IntrusionEye (Floating) -->
+    <!-- Node 1: Linux & Shell (Floating) -->
     <g class="node-1">
       <g transform="translate(85, 75)">
         <circle cx="0" cy="0" r="14" fill="#11151B" stroke="#66D9EF" stroke-width="1.2" />
         <circle cx="0" cy="0" r="4" fill="#66D9EF" />
-        <text x="0" y="-18" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" text-anchor="middle">IDS_PROBE</text>
-        <text x="0" y="24" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="7.5" text-anchor="middle">ESP32</text>
+        <text x="0" y="-18" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" text-anchor="middle">LINUX_SYS</text>
+        <text x="0" y="24" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="7.5" text-anchor="middle">Server &amp; Shell</text>
       </g>
     </g>
 
-    <!-- Node 2: Ghost-Guard (Floating) -->
+    <!-- Node 2: Python (Floating) -->
     <g class="node-2">
       <g transform="translate(325, 75)">
         <circle cx="0" cy="0" r="14" fill="#11151B" stroke="#BFC8D2" stroke-width="1.2" />
         <circle cx="0" cy="0" r="4" fill="#BFC8D2" />
-        <text x="0" y="-18" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" text-anchor="middle">ML_ENGINE</text>
-        <text x="0" y="24" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="7.5" text-anchor="middle">IsoForest</text>
+        <text x="0" y="-18" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" text-anchor="middle">PYTHON</text>
+        <text x="0" y="24" fill="#929DAA" font-family="'JetBrains Mono', monospace" font-size="7.5" text-anchor="middle">Automation</text>
       </g>
     </g>
 
-    <!-- Node 3: ChatX Crypt Vault (Floating) -->
+    <!-- Node 3: Networking (Floating) -->
     <g class="node-3">
       <g transform="translate(75, 220)">
         <circle cx="0" cy="0" r="13" fill="#11151B" stroke="#66D9EF" stroke-width="1.2" />
         <circle cx="0" cy="0" r="3.5" fill="#66D9EF" />
-        <text x="0" y="24" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" text-anchor="middle">AES_VAULT</text>
+        <text x="0" y="24" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" text-anchor="middle">NETWORKING</text>
       </g>
     </g>
 
-    <!-- Node 4: Mornye Zero Trust (Floating) -->
+    <!-- Node 4: Ethical Hacking & ML (Floating) -->
     <g class="node-4">
       <g transform="translate(335, 220)">
         <circle cx="0" cy="0" r="13" fill="#11151B" stroke="#BFC8D2" stroke-width="1.2" />
         <circle cx="0" cy="0" r="3.5" fill="#BFC8D2" />
-        <text x="0" y="24" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" text-anchor="middle">ZERO_TRUST</text>
+        <text x="0" y="24" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" text-anchor="middle">SECURITY_ML</text>
       </g>
     </g>
 
-    <!-- Center Node: SOC CORE (Floating Hub) -->
+    <!-- Center Node: Student Project Lab (Floating Hub) -->
     <g class="node-hub">
       <g transform="translate(205, 145)">
         <circle cx="0" cy="0" r="22" fill="#11151B" stroke="#BFC8D2" stroke-width="1.8" filter="url(#luxuryGlow)" />
         <circle cx="0" cy="0" r="16" fill="#161C24" stroke="#66D9EF" stroke-width="1" stroke-dasharray="2 3" />
         <circle cx="0" cy="0" r="5" fill="#F2F4F7" />
-        <text x="0" y="36" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1">SOC_CORE</text>
+        <text x="0" y="36" fill="#F2F4F7" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1">PROJECT_LAB</text>
       </g>
     </g>
 
@@ -346,7 +338,7 @@
     <g transform="translate(10, 288)">
       <rect x="0" y="0" width="390" height="20" rx="4" fill="#0C0F14" stroke="#29323E" stroke-width="1" />
       <text x="12" y="14" fill="#929DAA" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5">
-        STATUS: <tspan fill="#F2F4F7">NOMINAL</tspan> · LOSS: <tspan fill="#66D9EF">0.00%</tspan> · CIPHER: <tspan fill="#BFC8D2">AES-256-GCM</tspan>
+        PATH: <tspan fill="#F2F4F7">STUDENT</tspan> · APPROACH: <tspan fill="#66D9EF">LEARNING BY BUILDING</tspan> · AI-ASSISTED: <tspan fill="#BFC8D2">YES</tspan>
       </text>
     </g>
   </g>

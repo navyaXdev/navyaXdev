@@ -138,12 +138,12 @@
       <rect x="1" y="17" width="268" height="4" rx="2" fill="#66D9EF" />
     </g>
 
-    <!-- Gauge 3: E2EE Cipher Strength -->
+    <!-- Gauge 3: Python Automation -->
     <g transform="translate(0, 108)">
-      <text x="0" y="10" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="500">Cryptographic Entropy (AES-256-GCM)</text>
-      <text x="280" y="10" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" text-anchor="end">256-BIT MAX</text>
+      <text x="0" y="10" fill="#F2F4F7" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="500">Python Scripting &amp; Automation</text>
+      <text x="280" y="10" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" text-anchor="end">ACTIVE LEARNING</text>
       <rect x="0" y="16" width="280" height="6" rx="3" fill="#11151B" stroke="#29323E" stroke-width="1" />
-      <rect x="1" y="17" width="278" height="4" rx="2" fill="#BFC8D2" />
+      <rect x="1" y="17" width="260" height="4" rx="2" fill="#BFC8D2" />
     </g>
 
     <!-- Gauge 4: Zero Trust Uptime -->
