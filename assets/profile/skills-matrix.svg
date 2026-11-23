@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 145" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#11151B" />
+      <stop offset="100%" stop-color="#0B0E13" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="145" rx="8" fill="#080A0D" stroke="#29323E" stroke-width="1.2" />
+
+  <!-- Column 1: Languages -->
+  <g transform="translate(16, 16)">
+    <rect x="0" y="0" width="300" height="113" rx="6" fill="url(#cardGrad)" stroke="#29323E" stroke-width="1" />
+    <rect x="0" y="0" width="300" height="3" rx="1.5" fill="#66D9EF" />
+    <text x="16" y="24" fill="#66D9EF" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="700" letter-spacing="1">01 // CORE LANGUAGES</text>
+    
+    <g transform="translate(16, 44)" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+      <circle cx="4" cy="6" r="2.5" fill="#BFC8D2" />
+      <text x="14" y="10" fill="#F2F4F7">Python <tspan fill="#929DAA">· Scripting &amp; Automation</tspan></text>
+      
+      <circle cx="4" cy="28" r="2.5" fill="#66D9EF" />
+      <text x="14" y="32" fill="#F2F4F7">C / C++ <tspan fill="#929DAA">· Low-Level Systems</tspan></text>
+      
+      <circle cx="4" cy="50" r="2.5" fill="#BFC8D2" />
+      <text x="14" y="54" fill="#F2F4F7">TypeScript / JS <tspan fill="#929DAA">· Web Apps</tspan></text>
+    </g>
+  </g>
+
+  <!-- Column 2: Systems & Infrastructure -->
+  <g transform="translate(330, 16)">
+    <rect x="0" y="0" width="300" height="113" rx="6" fill="url(#cardGrad)" stroke="#29323E" stroke-width="1" />
+    <rect x="0" y="0" width="300" height="3" rx="1.5" fill="#BFC8D2" />
+    <text x="16" y="24" fill="#BFC8D2" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="700" letter-spacing="1">02 // SYSTEMS &amp; INFRASTRUCTURE</text>
+    
+    <g transform="translate(16, 44)" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+      <circle cx="4" cy="6" r="2.5" fill="#BFC8D2" />
+      <text x="14" y="10" fill="#F2F4F7">Linux / Kali <tspan fill="#929DAA">· OS &amp; Hardening</tspan></text>
+      
+      <circle cx="4" cy="28" r="2.5" fill="#66D9EF" />
+      <text x="14" y="32" fill="#F2F4F7">Docker <tspan fill="#929DAA">· Container Workflows</tspan></text>
+      
+      <circle cx="4" cy="50" r="2.5" fill="#BFC8D2" />
+      <text x="14" y="54" fill="#F2F4F7">Cloudflare <tspan fill="#929DAA">· Zero-Trust Tunnels</tspan></text>
+    </g>
+  </g>
+
+  <!-- Column 3: Security & Cryptography -->
+  <g transform="translate(644, 16)">
+    <rect x="0" y="0" width="300" height="113" rx="6" fill="url(#cardGrad)" stroke="#29323E" stroke-width="1" />
+    <rect x="0" y="0" width="300" height="3" rx="1.5" fill="#66D9EF" />
+    <text x="16" y="24" fill="#66D9EF" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="700" letter-spacing="1">03 // DEFENSE &amp; CRYPTOGRAPHY</text>
+    
+    <g transform="translate(16, 44)" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+      <circle cx="4" cy="6" r="2.5" fill="#BFC8D2" />
+      <text x="14" y="10" fill="#F2F4F7">802.11 Promiscuous <tspan fill="#929DAA">· Wi-Fi IDS</tspan></text>
+      
+      <circle cx="4" cy="28" r="2.5" fill="#66D9EF" />
+      <text x="14" y="32" fill="#F2F4F7">AES-256-GCM <tspan fill="#929DAA">· Client-Side E2EE</tspan></text>
+      
+      <circle cx="4" cy="50" r="2.5" fill="#BFC8D2" />
+      <text x="14" y="54" fill="#F2F4F7">Isolation Forest <tspan fill="#929DAA">· ML Honeypots</tspan></text>
+    </g>
+  </g>
+</svg>
