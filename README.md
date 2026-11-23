@@ -76,34 +76,25 @@ Explore my interactive projects, background, and personal portfolio:
 <!-- ==================== 5. THREE SELECTED PERSONAL PROJECTS ==================== -->
 ## `> SELECTED PROJECTS`
 
-<table width="100%">
-  <tr>
-    <td width="33.3%" valign="top">
-      <div align="right"><code>[SERVER &amp; STORAGE]</code></div>
-      <h3><a href="https://github.com/navyaXdev/Mornye-Network-Storage">📦 Mornye Network Storage</a></h3>
-      <p><b>Self-Hosted Linux Storage &amp; Cloudflare Tunnel</b></p>
-      <p>A hands-on personal project setting up a private Linux-based storage system. Focused on server configuration, shell commands, and integrating Cloudflare Tunnels for secure remote access without port forwarding.</p>
-      <p><b>Focus:</b> <code>Linux Server</code> • <code>Shell</code> • <code>Cloudflare Tunnel</code> • <code>Docker</code></p>
-      <p>🔗 <a href="https://github.com/navyaXdev/Mornye-Network-Storage"><b>View Repository</b></a> • <a href="https://navyaxdev.github.io/Mornye-Network-Storage/"><b>Docs</b></a></p>
-    </td>
-    <td width="33.3%" valign="top">
-      <div align="right"><code>[HARDWARE EXPERIMENT]</code></div>
-      <h3><a href="https://github.com/navyaXdev/IntrusionEye">📡 IntrusionEye</a></h3>
-      <p><b>ESP32 Wi-Fi Traffic Monitoring Experiment</b></p>
-      <p>An embedded hardware project using an ESP32 microcontroller to explore 802.11 wireless frames in promiscuous mode, experimenting with detecting Deauthentication frames and flood attacks with a basic web UI.</p>
-      <p><b>Focus:</b> <code>C++</code> • <code>ESP32</code> • <code>802.11 Promiscuous</code> • <code>WebSockets</code></p>
-      <p>🔗 <a href="https://github.com/navyaXdev/IntrusionEye"><b>View Repository</b></a></p>
-    </td>
-    <td width="33.3%" valign="top">
-      <div align="right"><code>[ML EXPERIMENT]</code></div>
-      <h3><a href="https://github.com/navyaXdev/Ghost-Guard">🛡️ Ghost-Guard</a></h3>
-      <p><b>Exploring ML-Based API Anomaly Detection</b></p>
-      <p>An experimental project exploring unsupervised machine learning (Isolation Forest) to detect unusual API request patterns by learning benign traffic baselines and diverting anomalous calls to simulated decoy endpoints.</p>
-      <p><b>Focus:</b> <code>JavaScript</code> • <code>Machine Learning</code> • <code>Isolation Forest</code> • <code>API Defense</code></p>
-      <p>🔗 <a href="https://github.com/navyaXdev/Ghost-Guard"><b>View Repository</b></a> • <a href="https://ghost-guard-beryl.vercel.app"><b>Live Demo</b></a></p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+
+  <a href="https://github.com/navyaXdev/Mornye-Network-Storage">
+    <img src="assets/projects/mornye-card.gif" alt="Mornye Network Storage — Self-Hosted Linux Storage with Cloudflare Tunnel" width="100%" />
+  </a>
+
+  <br/><br/>
+
+  <a href="https://github.com/navyaXdev/IntrusionEye">
+    <img src="assets/projects/intrusioneye-card.gif" alt="IntrusionEye — ESP32 Wi-Fi Traffic Monitoring Experiment" width="100%" />
+  </a>
+
+  <br/><br/>
+
+  <a href="https://github.com/navyaXdev/Ghost-Guard">
+    <img src="assets/projects/ghostguard-card.gif" alt="Ghost-Guard — Exploring ML-Based API Anomaly Detection" width="100%" />
+  </a>
+
+</div>
 
 ---
 
