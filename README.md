@@ -77,7 +77,6 @@ Explore my interactive projects, background, and personal portfolio:
 ## `> SELECTED PROJECTS`
 
 <table width="100%">
-  <!-- Project 1: Mornye Network Storage -->
   <tr>
     <td width="33.3%" valign="top">
       <div align="right"><code>[SERVER &amp; STORAGE]</code></div>
@@ -87,8 +86,6 @@ Explore my interactive projects, background, and personal portfolio:
       <p><b>Focus:</b> <code>Linux Server</code> • <code>Shell</code> • <code>Cloudflare Tunnel</code> • <code>Docker</code></p>
       <p>🔗 <a href="https://github.com/navyaXdev/Mornye-Network-Storage"><b>View Repository</b></a> • <a href="https://navyaxdev.github.io/Mornye-Network-Storage/"><b>Docs</b></a></p>
     </td>
-
-    <!-- Project 2: IntrusionEye -->
     <td width="33.3%" valign="top">
       <div align="right"><code>[HARDWARE EXPERIMENT]</code></div>
       <h3><a href="https://github.com/navyaXdev/IntrusionEye">📡 IntrusionEye</a></h3>
@@ -97,8 +94,6 @@ Explore my interactive projects, background, and personal portfolio:
       <p><b>Focus:</b> <code>C++</code> • <code>ESP32</code> • <code>802.11 Promiscuous</code> • <code>WebSockets</code></p>
       <p>🔗 <a href="https://github.com/navyaXdev/IntrusionEye"><b>View Repository</b></a></p>
     </td>
-
-    <!-- Project 3: Ghost-Guard -->
     <td width="33.3%" valign="top">
       <div align="right"><code>[ML EXPERIMENT]</code></div>
       <h3><a href="https://github.com/navyaXdev/Ghost-Guard">🛡️ Ghost-Guard</a></h3>
